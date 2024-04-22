@@ -45,16 +45,19 @@ class MainActivity : AppCompatActivity() {
         // For example, the user could input a minimum and maximum value, and the app should
         // generate a random number within that range.
 
-        val Result = findViewById<TextView>(R.id.Result)
+         
+        
+        val ResultMessage = findViewById<TextView>(R.id.ResultMessage)
 
-            val GenerateButton = findViewById<Button>(R.id.GenerateButton)
+
+        val GenerateButton = findViewById<Button>(R.id.GenerateButton)
 
 
             GenerateButton.setOnClickListener {
 
             val Result = Random.nextInt()
 
-                Result.text = "The number generated is ${Result.toString()}"
+                ResultMessage.text = "The number generated is ${Result.toString()}"
 
             }
 
